@@ -20,6 +20,7 @@ function App() {
           </button>
         </div>
       </div>
+      <TodoList></TodoList>
     </div>
   );
 }
