@@ -42,7 +42,7 @@ function App() {
           />
         </div>
       </div>
-      <Exercises></Exercises>
+      <Exercises />
     </>
   );
 }

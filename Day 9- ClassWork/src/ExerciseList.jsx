@@ -8,17 +8,15 @@ const Exercises = () => {
   const [searchResult, setSearchResult] = useState([]);
 
   useEffect(() => {
+    const url = "https://exercisedb.p.rapidapi.com/exercises";
+    const options = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Key": "672444eaf8msh8b507bd5de45338p1fdda4jsn1ef9821237db",
+        "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
+      },
+    };
     const fetchData = async () => {
-      const url = "https://exercisedb.p.rapidapi.com/exercises";
-      const options = {
-        method: "GET",
-        headers: {
-          "X-RapidAPI-Key":
-            "672444eaf8msh8b507bd5de45338p1fdda4jsn1ef9821237db",
-          "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
-        },
-      };
-
       try {
         const response = await fetch(url, options);
         const data = await response.json();
@@ -62,7 +60,7 @@ const Exercises = () => {
                 <ExerciseCard key={exercise.id} exercise={exercise} />
               ))
           : exercises
-              .slice(0, numCards)
+              .splice(0, numCards)
               .map((exercise) => (
                 <ExerciseCard key={exercise.id} exercise={exercise} />
               ))}
