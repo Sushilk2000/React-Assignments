@@ -12,7 +12,7 @@ const Exercises = () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "672444eaf8msh8b507bd5de45338p1fdda4jsn1ef9821237db",
+        "X-RapidAPI-Key": "d716907b18msh9e8b14e0a00b6fcp1c641bjsne19d0537b55b",
         "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
       },
     };
@@ -60,7 +60,7 @@ const Exercises = () => {
                 <ExerciseCard key={exercise.id} exercise={exercise} />
               ))
           : exercises
-              .splice(0, numCards)
+              .slice(0, numCards)
               .map((exercise) => (
                 <ExerciseCard key={exercise.id} exercise={exercise} />
               ))}
