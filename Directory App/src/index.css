@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1 px; 
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd; 
+}
