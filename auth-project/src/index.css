@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+.maindiv {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  padding-top: 20vh;
+}
